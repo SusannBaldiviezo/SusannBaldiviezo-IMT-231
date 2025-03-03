@@ -1,0 +1,42 @@
+#DESCOMPRIMIR tpPracticoPermisos
+tar -xzvf tpPracticoPermisos.tar.gz
+
+#EJERCICIO 1
+chmod 640 documento1.txt
+
+#EJERCICIO 2
+
+#EDITAR SCRIP.SH 
+nano scrip.sh
+#CONTENIDO
+#!/bin/bash
+read -p "Ingrese el nombre del usuario:" nombre
+echo "Hola $nombre, Bienvenido"
+cat script.sh 
+#PERMISO
+#7    propietario>> lectura(4)+escritura(2)+(1)ejecucion 
+#0    grupo >> lectura(0)+escritura(0)+(1)ejecucion
+#0    otros >>lectura(0)+escritura(0)+(1)ejecucion
+chmod 711  scrip.sh
+#VER LOS PERMISOS
+ls -l
+
+#EJERCICIO 3
+
+#PERMISO
+#6    propietario>> lectura(4)+escritura(2)+(0)ejecucion 
+#0    grupo >> lectura(0)+escritura(0)+(0)ejecucion
+#0    otros >>lectura(0)+escritura(0)+(0)ejecucion
+chmod 600 config.cfg 
+#VER LOS PERMISOS
+ls -l
+
+EJERCICIO 4
+#PERMISO 
+#4    propietario>> lectura(4)+escritura(0)+(0)ejecucion 
+#0    grupo >> lectura(0)+escritura(0)+(0)ejecucion
+#0    otros >>lectura(0)+escritura(0)+(0)ejecucion
+chmod 400 secreto.key
+#VER LOS PERMISOS
+ls -l
+
