@@ -1,3 +1,6 @@
+#ENLACE GIT
+https://github.com/SusannBaldiviezo/SusannBaldiviezo-IMT-231/tree/main/Tareas/tpPracticoPermisos
+
 #DESCOMPRIMIR tpPracticoPermisos
 tar -xzvf tpPracticoPermisos.tar.gz
 
