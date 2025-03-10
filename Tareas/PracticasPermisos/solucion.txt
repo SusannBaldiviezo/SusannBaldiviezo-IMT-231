@@ -1,0 +1,76 @@
+Los permisos se representan como:
+4 → Lectura (r)
+2 → Escritura (w)
+1 → Ejecución (x)
+
+#EJERCICIO 1
+• 6 (Propietario): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 4 (Grupo): Lectura (4) + Escritura (0) + Ejecución (0) = 4
+• 4 (Otros): Lectura (4) + Escritura (0) + Ejecución (0) = 4
+#COMANDO
+chmod 644 registro.log
+
+#EJERCICIO 2
+• 7 (Propietario): Lectura (4) + Escritura (2) + Ejecución (1) = 7
+• 0 (Grupo): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+• 0 (Otros): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+#COMANDO
+chmod 700 ejecutable.sh
+
+#EJERCICIO 3
+• 6 (Propietario): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 6 (Grupo): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 6 (Otros): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+#COMANDO
+chmod 666 publico.txt
+
+#EJERCICIO 4
+• 6 (Propietario): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 0 (Grupo): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+• 0 (Otros): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+#COMANDO
+chmod 600 respaldo.db
+
+#EJERCICIO 5
+• 6 (Propietario): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 4 (Grupo): Lectura (4) + Escritura (0) + Ejecución (0) = 4
+• 4 (Otros): Lectura (4) + Escritura (0) + Ejecución (0) = 4
+#COMANDO
+chmod 644 instrucciones.txt
+
+#EJERCICIO 6
+• 4 (Propietario): Lectura (4) + Escritura (0) + Ejecución (0) = 4
+• 0 (Grupo): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+• 0 (Otros): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+#COMANDO
+chmod 400 secreto.key
+
+#EJERCICIO 7
+• 1 (Propietario): Lectura (0) + Escritura (0) + Ejecución (1) = 1
+• 0 (Grupo): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+• 0 (Otros): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+#COMANDO
+chmod 100 ejecutar_programa
+
+#EJERCICIO 8
+• 6 (Propietario): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 6 (Grupo): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 6 (Otros): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+#COMANDO
+chmod 666 compartido.doc
+
+#EJERCICIO 9
+• 5 (Propietario): Lectura (0) + Escritura (0) + Ejecución (1) = 1
+• 5 (Grupo): Lectura (4) + Escritura (0) + Ejecución (1) = 5
+• 5 (Otros): Lectura (4) + Escritura (0) + Ejecución (1) = 5
+#COMANDO
+chmod 555 solo_ejecucion
+
+#EJERCICIO 10
+• 6 (Propietario): Lectura (4) + Escritura (2) + Ejecución (0) = 6
+• 4 (Grupo): Lectura (4) + Escritura (0) + Ejecución (0) = 4
+• 0 (Otros): Lectura (0) + Escritura (0) + Ejecución (0) = 0
+#COMANDO
+chmod 640 reporte_admin.pdf
+
+
