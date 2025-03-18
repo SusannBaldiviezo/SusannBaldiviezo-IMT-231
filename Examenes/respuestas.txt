@@ -1,0 +1,96 @@
+Datos del Estudiante
+- Nombre Completo:Susann Adriana Baldiviezo Castellanos   
+- URL de GitHub de la carpeta del examen:
+https://github.com/SusannBaldiviezo/SusannBaldiviezo-IMT-231/tree/main/Examenes
+
+
+#TAREA 1
+#Restaura los permisos mínimos necesarios para poder leer y modificar todo en
+#primerParcial231.
+chmod +x primerParcial231
+#Crea la carpeta Tarea1, crea otra subcarpeta llamada extraFolder y, dentro de ella, un archivo
+notesExtra.txt.
+mkdir Tarea1
+cd Tarea1/
+mkdir extraFolder
+cd extraFolder/
+touch notaExtra.txt
+#Muestra o guarda la salida del comando date para registrar la hora en que realizaste esta tarea
+#(puedes redirigir la salida a un archivo, por ejemplo fechaTarea1.txt)
+touch fechaTarea1.txt
+date >> fechaTarea1.txt
+cat fechaTarea1.txt 
+
+#TAREA 2
+#Ve a la carpeta Tarea2, donde se encuentra mainConfig.cfg.
+cd tarea2/
+#2. Requisitos de archivos:
+chmod 611 mainConfig.cfg 
+# Muestra o guarda la salida del comando date
+touch fechaTarea2.txt
+date >> fechaTarea2.txt
+cat fechaTarea2.txt
+#Agrega contenido a mainConfig.cfg con nano, vim o echo (al menos 2 líneas).
+nano mainConfig.cfg 
+cat mainConfig.cfg 
+Este es mi primer examen de programacion superior
+mi nombre es Susann 
+
+#5. Explica en respuestas.txt por qué elegiste ese número octal.
+chmod 611 archivo.txt
+• 6 (Propietario): Lectura (4) + Escritura (2)= 6
+• 1 (Grupo): Ejecucion(1) = 1
+• 1 (Otros): Ejecucion  = 1
+
+#TAREA 3
+#requisitos
+chmod 114 basicScript.sh 
+#contenido 
+#!/bin/bash
+echo "ingresa tu nomnbre" 
+read nombre
+echo "Bienvenido $nombre "
+# guardar la ubicación actual en un archivo.
+mkdir ubicaciones
+cd ubicaciones/
+touch ubicaciones.txt
+pwd >> ubicaciones.txt
+cat ubicaciones.txt 
+#guardar la fecha de ejecucion
+cd ..
+touch fechaTarea3.txt
+date >> fechaTarea3.txt
+cat fechaTarea3.txt
+
+#navegacion
+ls -l 
+
+#Mensaje final 
+echo "Se termino el scrip"
+
+#TAREA 4
+
+nano infoDocument.txt 
+Ctrl+O, Ctrl+X
+
+cat infoDocument.txt #el cat nos sirve para visualizar nuestro contenido de un archivo
+touch fechaTarea4.txt
+date >> fechaTarea4.txt
+
+
+#TAREA 5
+mkdir tarea5
+touch entregaFinal.txt
+tree -p >> entregaFinal.txt
+#para que sirve el tree -p
+Proporciona una representación visual de la jerarquía de archivos y directorios,
+ lo que facilita la comprensión de la organización del sistema
+ de archivos
+
+Propósito del Argumento -p
+El argumento -p en el comando tree se utiliza para mostrar los permisos de cada
+ archivo y directorio en la salida. 
+Cuando se incluye esta opción, el comando pone los permisos en formato octal
+
+#al finalizar la escritura este archivo solo debe tener permisos de lectura y/o ejecucion
+chmod 555 entregaFinal.txt 
