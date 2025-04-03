@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int s;
-    printf("Ingrese un numero");
+    printf("Ingrese un numero:  ");
     scanf("%d", &s);
     if (s%2==0){
         printf("El numero es par");
@@ -12,3 +12,4 @@ int main(){
 
     }
 
+    
